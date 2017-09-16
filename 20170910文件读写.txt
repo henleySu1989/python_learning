@@ -1,0 +1,31 @@
+1 文件路径
+绝对路径
+相对路径 项目同路径
+..\test2\aaa.txt
+..\返回上级目录
+
+由于反斜杠\在字符串中有转义符
+(1) 路径前加上r
+(2) 使用\\
+(3) 将\修改为/
+
+2 read()一次性全部读完
+readline ()一次读取一行
+readlines()一次完全所有行读取
+
+3 seek(offset,from_what)
+ 使文件指针从from_what移动offset
+ from_what=0 从起始位置
+ from_what=1 从当前文件指针位置开始移动
+ from_what=2 文件末尾开始移动
+ 
+4 写入文件
+	write
+	writelines
+	类似于read
+
+5 异常处理
+	try:
+	except 后面接着我们预期出现的错误类型ValueError 
+		如果后面不接类型，且不能放在最前面
+	finally:不管最后是否出现异常都会执行

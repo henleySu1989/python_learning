@@ -1,0 +1,30 @@
+1 布尔类型
+	True,False
+	
+2 逻辑运算符
+	not 非
+	or 或
+	and 与
+	
+3 比较运算符
+	>,<,==
+	
+	
+布尔类型
+1 强制转换
+	空格强制转换为bool，为True
+	True 强制转换为int,值为1，float则为1.0，str为'True'
+	False 强制转换为int,值为0，float则为0.0,str为'False'
+	在进行计算时布尔类型会自动进行强制转换
+	True+1
+	结果为2，默认将True转换为1
+	
+2 输出格式 
+	%s 字符串输出
+	%d 整数类型输出
+	%f 浮点数类型输出，可设置小数位 %.2f 小数位为2
+	
+	"%s's age is %d"%(name,age),变量顺序必须与前面一致
+	另一种写法：
+	"{0}'s age is {1}".format(name,age)
+	

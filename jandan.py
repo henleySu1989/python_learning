@@ -3,7 +3,7 @@ import requests
 import urllib.request
 import uuid
 import os
-import _thread
+import threading
 
 imgPath = 'Image'
 threadFlag = True;
@@ -27,10 +27,10 @@ end = eval(input("请输入终止页：\n"))
 print("开始下载")
 try:
     for num in range(start,end+1):
-        _thread.start_new_thread(getimages,(num,))
+         # _thread.start_new_thread(getimages,(num,))
+        t = threading.Thread(target=getimages,args=(num,))
+        t.start()
 except:
     print("无法进入线程")
 finally:
     threadFlag = False
-while threadFlag:
-    pass

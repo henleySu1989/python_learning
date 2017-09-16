@@ -1,0 +1,44 @@
+1 Python3 输出
+	输出print后面必须有括号，与Python2不同
+	打印字符串
+	print ("Hello Word!")
+	打印数字
+	print (5)
+	也可以是计算式
+	print (3+2)
+	打印多个字符串中间用逗号
+	print ("Hello","World")，显示结果是自动的将逗号换成空格
+	
+	若中字符串中间有引号
+	print("I say "Hello" to you!") 错误原因是使用同级引号
+	单引号和双引号分级使用
+	print("I say 'Hello' to you!")
+	out:I say 'Hello' to you!
+	print('I say "Hello" to you!')
+	out:I say "Hello" to you!
+	三引号可以输入多行字符串
+	
+	print("Hello" , end=" ")
+    print("World !")
+	print 函数默认是使用换行符结尾，设置end=" "使用空格结尾
+	
+	print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False) 
+	print的语法 
+	sep: string inserted between values, default a space. 在values之间默认使用空格间隔
+	end: string appended after the last value, default a newline. 扩展的上一个字符串结尾的值，默认为换行符\n
+	flush: whether to forcibly flush the stream.是否强制刷新输出流
+	
+2 Python3 输入
+	input输入，Python3 中所有的输入最后都是字符串显示,输入值完全是按照键入值得到
+	input("输入年龄：") (其中输入年龄为提示)
+	输入年龄：
+	"23"
+	显示结果为
+	'"23"'
+	
+	因为intput得到是字符串。所以想得到相应的类型则须进行强制转换
+	(1) a = int(input("输入数字:")) 此代码在IDE上无法正常运行，但在Pycharm上能正常运营
+	输入5时，先得到是'5',强制转换为int类型，赋值给a
+	(2) value = eval(input("输入你的是数字:"))
+	
+3 eval函数的研究

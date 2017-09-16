@@ -1,0 +1,5 @@
+name = input("name:")
+age = int(input("age:"))
+gpa = float(input("Gpa:"))
+result = "%s,age: %d, Gpa: %.2f"%(name,age,gpa)
+print(result)

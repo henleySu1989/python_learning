@@ -1,0 +1,31 @@
+1导入模块
+	from random import randint
+	from 模块 import 函数
+	可直接使用randint
+	
+	randint(1,10) 随机生成1，10的整数包括1，10
+	
+	from random import randint as r
+	后面可以使用r替代randint函数使用
+	
+2 dir(random) 可知道random里面包含了那些函数等
+
+3 random 函数
+	random.randrange(start,stop,step)
+	生成一个从start到stop,步长为step的随机数
+	range(start,stop,step)
+	随机生成一个从start到stop,步长为step的序列
+	
+	random.choise(seq)
+	seq必须是序列，元组，字符串
+	如果是字符串，则从字符串中随机选取字符串中的字母
+	
+	random.uniform(a,b)
+	随机生成a,b之间的浮点数，a和b无需区分大小
+	
+	random.sample(population, k)
+	从population中随机抽取k个数的序列，顺序不能变
+	
+	
+	
+	
